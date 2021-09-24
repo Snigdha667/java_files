@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Arr {
+    public Arr() {
+    }
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int[][] arr = new int[3][];
+
+        int j;
+        for(j = 0; j < arr.length; ++j) {
+            arr[j] = new int[s.nextInt()];
+        }
+
+        int k;
+        for(j = 0; j < arr.length; ++j) {
+            for(k = 0; k < arr[j].length; ++k) {
+                arr[j][k] = s.nextInt();
+            }
+        }
+
+        for(j = 0; j < arr.length; ++j) {
+            for(k = 0; k < arr[j].length; ++k) {
+                System.out.print(arr[j][k] + " ");
+            }
+
+            System.out.println();
+        }
+
+    }
+}
