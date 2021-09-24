@@ -1,0 +1,11 @@
+import static java.lang.Integer.MIN_VALUE;
+import static java.lang.Byte.*;
+public class Teat {
+    public static void main(String[] args) {
+        public static int MIN_VALUE = 800;
+        System.out.println(MIN_VALUE);
+    }
+
+
+}
+o/p = 800
