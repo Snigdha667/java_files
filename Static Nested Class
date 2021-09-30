@@ -1,0 +1,20 @@
+//Static Nested Class
+public class Outer {
+    int a = 10;
+    static class Inner
+    {
+        public static Inner obj1;
+        int b = 20;
+        public void display()
+        {
+            Outer obj = new Outer();
+            System.out.println(obj.a + " " + b);
+        }
+    }
+}
+class Test{      //Execution Class
+    public static void main(String[] args) {
+        Outer.Inner.obj1 = new Outer.Inner();
+        Outer.Inner.obj1.display();
+    }
+}
