@@ -1,0 +1,30 @@
+//To check if shop is open/closed using nested class.
+public class Door {
+    public class Lock
+    {
+        private boolean status;
+        public Lock(boolean status){
+            this.status = status;
+        }
+        public  boolean getStatus() {
+            return status;
+        }
+    }
+    public Door(){
+        Lock obj = new Lock(true);
+    }
+    public void doorstatus() {
+        if (Lock.getStatus().equals(true)) {
+            System.out.println("We Are Closed.");
+        } else {
+            System.out.println("We Are Open.");
+        }.
+    }
+}
+//Execution Class
+class Testt{
+    public static void main(String[] args) {
+        Door obj1 = new Door();
+        obj1.doorstatus();
+    }
+}
